@@ -43,7 +43,7 @@ namespace Controllers
                     var signin = new SigningCredentials(key,SecurityAlgorithms.HmacSha256);
                     var token = new JwtSecurityToken(
                         claims.ToString(),
-                        expires: DateTime.Now.AddHours(10),
+                        expires: DateTime.Now.AddHours(1),
                         signingCredentials: signin);
 
                         return Ok(new JwtSecurityTokenHandler().WriteToken(token));
