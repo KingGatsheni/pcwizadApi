@@ -76,7 +76,7 @@ namespace backendApi.Controllers
 
         }
 
-        [HttpPost]
+        [HttpPatch]
         [Route("/api/[controller]/{id}")]
 
         public IActionResult EditProducts(Guid id, Models.Products Products)
@@ -86,7 +86,7 @@ namespace backendApi.Controllers
             if (existing_Products != null)
             {
                 Products.ProdId = existing_Products.ProdId;
-                _ProductsData.EditProducts(existing_Products);
+                _ProductsData.EditProducts(Products);
             }
 
             return Ok(Products);
