@@ -76,7 +76,7 @@ namespace backendApi.Controllers
 
         }
 
-        [HttpPut]
+        [HttpPost]
         [Route("/api/[controller]/{id}")]
 
         public IActionResult EditProducts(Guid id, Models.Products Products)
