@@ -49,6 +49,16 @@ namespace ProductsData
 
         }
 
+        public List<Orders> GetOrders()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Orders GetOrders(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Products GetProducts(Guid id)
         {
             var Products = _ProductsContext.products.Find(id);
@@ -58,6 +68,11 @@ namespace ProductsData
         public List<Products> Getproducts()
         {
             return _ProductsContext.products.ToList();
+        }
+
+        public Orders PlacedOrders(Orders Orders)
+        {
+            throw new NotImplementedException();
         }
 
         List<Products> IProductsData.GetProducts()

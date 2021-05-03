@@ -17,6 +17,11 @@ namespace ProductsData
 
         void DeleteProducts(Models.Products Products);
 
-        Models.Products EditProducts(Models.Products products);      
+        Models.Products EditProducts(Models.Products products);
+
+        Models.Orders PlacedOrders(Models.Orders Orders);
+        List<Models.Orders> GetOrders();
+        Models.Orders GetOrders(Guid id);
+
     }
 }
