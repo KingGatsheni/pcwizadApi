@@ -34,6 +34,6 @@ jobs:
       with:
         app-name: pcwizard
         slot-name: Production
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6AE5EAB7D9E04D49AD85A36DC425FD6F }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_138018F0092E4EB2B8E79B355E031545 }}
         package: ${{env.DOTNET_ROOT}}/myapp
 
